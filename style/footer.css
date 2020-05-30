@@ -1,0 +1,17 @@
+.footer {
+  background-color: rgba(105, 47, 204, 0.1);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8); }
+  .footer .footer-logo img {
+    width: 200px;
+    padding-top: 20px; }
+  .footer .footer-social {
+    padding-bottom: 10px; }
+    .footer .footer-social a {
+      padding: 10px; }
+      .footer .footer-social a img {
+        width: 18px; }
+  .footer .copyright {
+    padding-bottom: 20px;
+    color: rgba(105, 47, 204, 0.8);
+    font-size: 12px; }

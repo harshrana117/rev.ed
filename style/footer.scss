@@ -1,0 +1,27 @@
+.footer{
+	background-color: rgba(105, 47, 204, 0.1);
+	text-align: center;
+	color:rgba(0,0,0,0.8);
+    .footer-logo{
+    	img{
+    		width:200px;
+    		padding-top:20px;
+    	}
+    }
+
+    .footer-social{
+    	padding-bottom:10px;
+    	a{
+    		padding:10px;
+    		img{
+    			width:18px;
+    		}
+    	}
+    }
+    .copyright{
+    	padding-bottom:20px;
+    	color:rgba(105, 47, 204,0.8);
+    	font-size:12px;
+    }
+
+}

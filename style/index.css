@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.index-display {
+  background-image: url("../image/index/index-back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+}
+.index-display .index-image img {
+  width: 550px;
+}
+.index-display .index-heading {
+  padding: 150px 80px;
+}
+.index-display .index-heading h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #692fcc;
+}
+.index-display .index-heading a {
+  text-decoration: none;
+  color: #692fcc;
+  padding: 10px 30px;
+  border: 1px solid #692fcc;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.2s;
+}
+.index-display .index-heading a:hover {
+  color: white;
+  background-color: #692fcc;
+  transition: background-color 0.4s;
+}
+.index-display .index-heading #display-button-contrast {
+  color: white;
+  background-color: #692fcc;
+}
+.index-display .index-heading #display-button-contrast:hover {
+  color: #692fcc;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 950px) {
+  .index-display {
+    padding: 50px;
+    display: block;
+    text-align: center;
+  }
+  .index-display .index-image img {
+    width: 550px;
+  }
+  .index-display .index-heading {
+    padding: 50px 20px;
+  }
+  .index-display .index-heading h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #692fcc;
+  }
+  .index-display .index-heading a {
+    text-decoration: none;
+    color: #692fcc;
+    display: block;
+    padding: 10px 30px;
+    border: 1px solid #692fcc;
+    border-radius: 4px;
+    margin: 10px 0px;
+    transition: background-color 0.2s;
+  }
+  .index-display .index-heading a:hover {
+    color: white;
+    background-color: #692fcc;
+    transition: background-color 0.4s;
+  }
+  .index-display .index-heading #display-button-contrast {
+    color: white;
+    background-color: #692fcc;
+  }
+  .index-display .index-heading #display-button-contrast:hover {
+    color: #692fcc;
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 500px) {
+  .index-display {
+    padding: 50px 20px;
+  }
+  .index-display .index-image img {
+    width: 300px;
+  }
+  .index-display .index-heading {
+    padding: 30px;
+  }
+  .index-display .index-heading h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #692fcc;
+  }
+  .index-display .index-heading a {
+    text-decoration: none;
+    color: #692fcc;
+    padding: 10px 30px;
+    margin: 20px 0px;
+    border: 1px solid #692fcc;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .index-display .index-heading a:hover {
+    color: white;
+    background-color: #692fcc;
+    transition: background-color 0.4s;
+  }
+  .index-display .index-heading #display-button-contrast {
+    color: white;
+    background-color: #692fcc;
+  }
+  .index-display .index-heading #display-button-contrast:hover {
+    color: #692fcc;
+    background-color: transparent;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
