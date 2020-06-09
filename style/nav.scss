@@ -16,6 +16,7 @@
 }
 
 .navbar{
+	border-top:4px solid rgb(105, 47, 204);
 	transition:all 0.5s;
 	width:100%;
 	display:flex;
@@ -66,7 +67,7 @@
 			}
 			.dropdown{
 				.nested{
-
+					border-bottom:4px solid rgb(105, 47, 204);
 					position:absolute;
 					list-style: none;
 					background-color:white;
@@ -128,11 +129,13 @@
 			padding-top: 15vh;
 			height:100vh;
 			width:70vw;
-			background-color:rgba(255,255,255,0.9);
+			background-color:rgba(255, 255, 255, 0.95);
 			position:absolute;
 			display: block;
 			.dropdown{
 				.nested{
+					border-bottom: none;
+					border-left:1px solid rgb(105, 47, 204);
 					padding-top:10px;
 					background-color:rgba(255,255,255,0);
 					position:static;

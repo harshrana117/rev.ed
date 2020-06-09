@@ -7,142 +7,251 @@ html{
   scroll-behavior: smooth;
 }
 
-.index-display{
-	background-image: url("../image/index/index-back.jpg");
-	background-position:center;
-	background-repeat:no-repeat;
-	padding:50px;
-	height:100vh;
+.index-front{
 	display:flex;
-	.index-image{
-		// padding:50px;
+	padding:100px 50px 50px 50px;
+	.image{
+		margin:50px 10px;
 		img{
-			width:550px;
+          width:700px;
 		}
 	}
-	.index-heading{
-		padding:150px 80px;
-		h1{
-			font-size:48px;
-			margin-bottom:50px;
-			color: #692fcc;
-		}
-		a{
-			text-decoration: none;
+	.text{
+		margin:100px 0px;
+		.heading{
+			padding:50px 0px;
 			color:#692fcc;
-			padding:10px 30px;
-			border:1px solid #692fcc;
-			border-radius:4px;
-			margin-right:10px;
-			transition:background-color 0.2s;
-			&:hover{
-				color:white;
-				background-color: #692fcc;
-				transition:background-color 0.4s;
+			font-size: 42px;
+			span{
+				color:red;
 			}
-
 		}
-		#display-button-contrast{
-			color:white;
-			background-color: #692fcc;
-			&:hover{
+		.buttons{
+			a{
 				color:#692fcc;
-				background-color: transparent;
+				text-decoration: none;
+				padding:10px 30px;
+				border:0.5px solid #692fcc;
+				margin-left:10px;
+				border-radius: 2px;
+				transition:all 0.2s;
+				&:hover{
+					color: whitesmoke;
+					background-color: #692fcc;
+					transition:all 0.4s;
+				}
 			}
 		}
+	}
 
+	@media screen and (max-width: 1100px){
+		    .image{
+				img{
+					width:500px;
+				}
+			}
+				
+			.text{
+				margin:50px 0px;
+				.heading{
+					font-size: 32px;
+				}
+			}
+			.buttons{
+				a{
+					
+					margin-bottom: 10px;
+					text-align: center;
+				}
+			}
+	}
+
+	@media screen and (max-width: 930px){
+		.image{
+			img{
+				width:300px;
+			}
+		}
+	}
+	@media screen and (max-width: 720px){
+		display:block;
+		.image{
+			margin:10px 10px;
+			text-align: center;
+			img{
+				display:inline-block;
+				width:400px;
+			}
+		}
+		.text{
+			text-align: center;
+			margin:10px;
+		}
+	}
+
+	@media screen and (max-width: 500px){
+		.image{
+			img{
+				width:250px;
+			}
+		}
+		.text{
+			a{
+				display:block;
+			}
+		}
 	}
 }
 
-@media screen and (max-width: 950px){
-	.index-display{
-	   padding:50px;
-	   display:block;
-	   text-align: center;
-	.index-image{
-		// padding:50px;
-		img{
-			width:550px;
+
+.explore-section{
+	padding:50px;
+	text-align: center;
+	h1{
+		font-weight:lighter;
+		color:#692fcc;
+		padding:50px 0px 100px 0px;
+	}
+
+	.explore-card-wrap{
+		display:flex;
+		justify-content: space-around;
+		.explore-card{
+			img{
+				width:300px;
+				padding-bottom:10px;
+			}
+			p{
+				font-size:24px;
+				color:rgba(0,0,0,0.6);
+			}
 		}
 	}
-	.index-heading{
-		padding:50px 20px;
-		h1{
-			font-size:48px;
-			margin-bottom:20px;
-			color: #692fcc;
+
+	@media screen and (max-width:1200px){
+		.explore-card-wrap{
+			.explore-card{
+				img{
+					width:200px;
+					padding:10px;
+				}
+			}
 		}
-		a{
-			text-decoration: none;
-			color:#692fcc;
+	}
+
+	@media screen and (max-width:700px){
+		padding:10px;
+		h1{
+			font-size: 24px;
+			padding:20px 10px 20px 10px;
+		}
+		.explore-card-wrap{
 			display:block;
-			padding:10px 30px;
-			border:1px solid #692fcc;
-			border-radius:4px;
-			margin:10px 0px;
-			transition:background-color 0.2s;
-			&:hover{
-				color:white;
-				background-color: #692fcc;
-				transition:background-color 0.4s;
-			}
-
-		}
-		#display-button-contrast{
-			color:white;
-			background-color: #692fcc;
-			&:hover{
-				color:#692fcc;
-				background-color: transparent;
+			text-align: center;
+			.explore-card{
+				padding:20px 0px;
+				img{
+					width:200px;
+					padding:10px;
+				}
+				p{
+					font-size: 18px;
+				}
 			}
 		}
-
-	}
-}
-}
-
-@media screen and (max-width: 500px){
-
-	.index-display{
-	    padding:50px 20px;
-	.index-image{
-		// padding:50px;
-		img{
-			width:300px;
-		}
-	}
-	.index-heading{
-		padding:30px;
-		h1{
-			font-size:28px;
-			margin-bottom:20px;
-			color: #692fcc;
-		}
-		a{
-			text-decoration: none;
-			color:#692fcc;
-			padding:10px 30px;
-			margin:20px 0px;
-			border:1px solid #692fcc;
-			border-radius:4px;
-			transition:background-color 0.2s;
-			&:hover{
-				color:white;
-				background-color: #692fcc;
-				transition:background-color 0.4s;
-			}
-
-		}
-		#display-button-contrast{
-			color:white;
-			background-color: #692fcc;
-			&:hover{
-				color:#692fcc;
-				background-color: transparent;
-			}
-		}
-
 	}
 }
 
+.template-section{
+	padding:100px 50px;
+	h1{
+		color:#692fcc;
+		font-weight: lighter;
+		font-size:32px;
+		text-align: center;
+		padding:20px 0px 50px 0px;
+	}
+	.template-wrap{
+		display:grid;
+		grid-template-columns: repeat(4,1fr);
+		justify-items: center;
+		.template-card{
+			
+			margin:20px;
+			overflow: hidden;
+			box-shadow: 10px 40px 50px rgba(0,0,0,0.4);
+			background-color:white;
+			border-radius:30px;
+			width:250px;
+			height:350px;
+			// border:1px solid black;
+			.template-pic{
+				overflow: hidden;
+				width:100%;
+				height:250px;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background:url("../image/index/floxus.png");
+
+			}
+			.template-desc{
+				text-align: center;
+				padding:10px;
+				h3{
+					font-weight: lighter;
+					color:rgba(0,0,0,0.7);
+					padding-bottom:1px;
+
+				}
+				h4{
+					color:rgba(255,0,0,0.7);
+					font-weight: lighter;
+					padding-bottom: 2px;
+					margin-bottom:5px;
+				}
+				a{
+					
+					padding:3px 10px;
+					text-decoration: none;
+					margin-right: 10px;
+					border-radius:3px;
+					color:green;
+					border:0.2px solid green;
+					&:hover{
+					  box-shadow: 1px 5px 7px rgba(0,0,0,0.2);
+					  transition: all 0.2s;
+					}
+					
+
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width:1300px){
+		.template-wrap{
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+	}
+
+	@media screen and (max-width:1000px){
+		.template-wrap{
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+	}
+
+	@media screen and (max-width:700px){
+		.template-wrap{
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+	}
+
+	@media screen and (max-width:500px){
+		padding:100px 5px;
+
+	}
 }
