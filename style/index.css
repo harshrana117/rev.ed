@@ -68,8 +68,7 @@ html {
 }
 @media screen and (max-width: 720px) {
   .index-front {
-    background: #b999ee;
-    background: linear-gradient(315deg, #b999ee 0%, white 73%, white 100%);
+    background-image: none;
     display: block;
   }
   .index-front .image {

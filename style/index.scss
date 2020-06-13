@@ -78,8 +78,8 @@ html{
 		}
 	}
 	@media screen and (max-width: 720px){
-		background: rgb(185,153,238);
-background: linear-gradient(315deg, rgba(185,153,238,1) 0%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%);
+		background-image: none;
+		// background-image: linear-gradient(to bottom, #f0c5ff, #efd5ff, #f1e4ff, #f7f2ff, #ffffff);
 		display:block;
 		.image{
 			margin:10px 10px;
